@@ -1,6 +1,7 @@
 <template>
     <div>
-
+        <button onclick = "this.grid_this()">change view</button>
+        <h1>testing</h1>
     </div>
 </template>
 
@@ -44,6 +45,18 @@
             },
             ]
         },
+        methods: {
+            list_all: function() {
+                
+                for (let i = 0; i<this.$data.length; i++){
+                    document.body.insertAdjacentHTML(`beforeend`, `<h3>tweet: ${this.$data[i][`tweet`]}</h3>`)
+                }
+            }
+        },
+        mounted () {
+            this.list_all();
+        },
+        name: "the-tweets"
     }
 </script>
 

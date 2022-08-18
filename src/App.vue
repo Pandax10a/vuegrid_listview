@@ -1,13 +1,19 @@
 <template>
   <div id="app">
-    
+    <the-tweets></the-tweets>
   </div>
 </template>
 
 <script>
 
+import TheTweets from '@/components/TheTweets.vue'
+
 
 export default {
+  
+  components: {
+    TheTweets
+  }
 
 }
 </script>
