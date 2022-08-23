@@ -67,23 +67,24 @@
             
         },
         methods: {
-            list_all: function() {
+            /* list_all: function() {
                 
                 for (let i = 0; i<this.$data.length; i++){
                     document.this.$refs.toggle_change.insertAdjacentHTML(`beforeend`, `<div class = "change" <h3>user: ${this.$data[i][`user`]} <br>tweet: ${this.$data[i][`tweet`]}
                     <br>date: ${this.$data[i][`date`]}</h3> </div`)
                 }
-            },
+            }, */
             // conditional to set true/false depending what the stored value is
             change_on: function() {
-                if (this.$data[`isOn`]) {
-               this.$data[`isOn`] = false;
+            //     if (this.$data[`isOn`]) {
+            //    this.$data[`isOn`] = false;
                
-                } else if (this.$data[`isOn`] === false) {
-                    this.$data[`isOn`] = true
+            //     } else if (this.$data[`isOn`] === false) {
+            //         this.$data[`isOn`] = true
                     
-                }
-               
+            //     }
+
+                this.$data[`isOn`] = !this.$data[`isOn`];
                
             }
         },
